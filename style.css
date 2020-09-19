@@ -1,0 +1,67 @@
+.main {
+  background:wheat;
+  height: 300px;
+  height: min-content 400px;
+  width: 100%;
+  margin-top: 10%;
+  background-image: url(https://img0.liveinternet.ru/images/attach/c/0/36/585/36585704_P6010992.JPG);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border: 1px solid rgba(119, 119, 119, 0.075);
+
+}
+
+.boxMain {
+  background-color:pink;
+  width: 60%;
+  margin-left: 20%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-top:  30px;
+  
+}
+
+.doubleBox{
+  display: flex;
+  justify-content: center;
+}
+
+.boxRus, .boxEng {
+  background-color: rgb(203, 218, 228);
+  /* border: 1px solid black; */
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin-top: 1%;
+  border-radius: 3px;
+}
+
+.boxEng {
+  border-left: 1px solid white
+}
+/* .boxRus {
+  border-right: 1px solid white;
+} */
+@media screen and (max-width: 767px){
+  .main{
+    height: 100%;
+  }
+  .doubleBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .boxEng{
+    border-left: none;
+  }
+  .main{
+    background-size: auto;
+  }
+  .boxMain{
+    width: 80%;
+    margin-left: 10%;
+  }
+}
