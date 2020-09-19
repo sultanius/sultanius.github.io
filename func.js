@@ -16,6 +16,7 @@ function wordToBox(){
   if (word){                               //делаем ... если длинное слово
     newDiv.style.overflow = 'hidden';
     newDiv.style.textOverflow = 'ellipsis';
+    newDiv.style.whiteSpace = 'nowrap';
     newDiv.setAttribute('title', word)    // чтоб слово показывалось при наведении
   }
 
@@ -39,6 +40,7 @@ for(let i = 0; i < wordSplit.length; i++){
   if (engWord){                               //делаем ... если длинное слово
     newDiv1.style.overflow = 'hidden';
     newDiv1.style.textOverflow = 'ellipsis';
+    newDiv1.style.whiteSpace = 'nowrap';
     newDiv1.setAttribute('title', word)    // чтоб слово показывалось при наведении
   }
 }
